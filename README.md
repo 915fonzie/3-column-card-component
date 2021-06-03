@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Live Site URL: [live site URL](https://3-column-card-component-preview.netlify.app/)
 
 ## My process
 First started with setting up all of my files. I created my styles folder with my global and style sass files. Put all of the global parameters I put into every project. Then moved to the index html and created all the necessary sections with their identifiers if needed. After index file was done, I moved to styling all of the css through trial and error. I did my best to organize the css files so there is a type of hierachy order as well as creating custom properties that could potentially be reused.
