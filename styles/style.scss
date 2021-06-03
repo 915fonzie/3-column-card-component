@@ -14,7 +14,7 @@ $car-text: 1.5em;
 @import "./global";
 
 .card-background {
-  min-height: 70vh;
+  min-height: 90vh;
   @include flex(center, center, column);
 }
 
