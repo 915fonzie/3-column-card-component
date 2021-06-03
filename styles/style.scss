@@ -37,21 +37,21 @@ $car-text: 1.5em;
 
 .sedans {
   background: $sedan-color;
-  .learn-more button {
+  .learn-more a {
     color: $sedan-color;
   }
 }
 
 .suvs {
   background: $suv-color;
-  .learn-more button {
+  .learn-more a {
     color: $suv-color;
   }
 }
 
 .luxury {
   background: $luxury-color;
-  .learn-more button {
+  .learn-more a {
     color: $luxury-color;
   }
 }
@@ -67,7 +67,7 @@ $car-text: 1.5em;
 }
 
 .car-text,
-.learn-more button {
+.learn-more a {
   font-family: "Lexend Deca", sans-serif;
   color: white;
   line-height: 2.5rem;
@@ -78,7 +78,8 @@ $car-text: 1.5em;
 }
 
 
-.learn-more button {
+.learn-more a {
+  background: white;
   text-align: center;
   text-decoration: none;
   border-radius: 3rem;
@@ -88,7 +89,7 @@ $car-text: 1.5em;
   transition: all 0.3s ease;
 }
 
-.learn-more button:hover {
+.learn-more a:hover {
   background: none;
   border: white solid 2px;
   color: white;

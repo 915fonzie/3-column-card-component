@@ -85,7 +85,7 @@ a {
   background: #e38826;
 }
 
-.sedans .learn-more button {
+.sedans .learn-more a {
   color: #e38826;
 }
 
@@ -93,7 +93,7 @@ a {
   background: #006970;
 }
 
-.suvs .learn-more button {
+.suvs .learn-more a {
   color: #006970;
 }
 
@@ -101,7 +101,7 @@ a {
   background: #004241;
 }
 
-.luxury .learn-more button {
+.luxury .learn-more a {
   color: #004241;
 }
 
@@ -120,7 +120,7 @@ a {
 }
 
 .car-text,
-.learn-more button {
+.learn-more a {
   font-family: "Lexend Deca", sans-serif;
   color: white;
   line-height: 2.5rem;
@@ -132,7 +132,8 @@ a {
           flex: 3;
 }
 
-.learn-more button {
+.learn-more a {
+  background: white;
   text-align: center;
   text-decoration: none;
   border-radius: 3rem;
@@ -143,7 +144,7 @@ a {
   transition: all 0.3s ease;
 }
 
-.learn-more button:hover {
+.learn-more a:hover {
   background: none;
   border: white solid 2px;
   color: white;
