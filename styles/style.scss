@@ -1,0 +1,141 @@
+$sedan-color: hsl(31, 77%, 52%);
+$suv-color: hsl(184, 100%, 22%);
+$luxury-color: hsl(179, 100%, 13%);
+$car-title: 4em;
+$car-text: 1.5em;
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@import "./global";
+
+.card-background {
+  min-height: 70vh;
+  @include flex(center, center, column);
+}
+
+.card {
+  @include flex(center, center, row);
+  max-width: 70%;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.sedans,
+.suvs,
+.luxury {
+  flex: 1 1 10rem;
+  padding: 5rem;
+  min-height: 550px;
+  width: 100%;
+  @include flex(space-between, flex-start, column);
+}
+
+.sedans {
+  background: $sedan-color;
+  .learn-more button {
+    color: $sedan-color;
+  }
+}
+
+.suvs {
+  background: $suv-color;
+  .learn-more button {
+    color: $suv-color;
+  }
+}
+
+.luxury {
+  background: $luxury-color;
+  .learn-more button {
+    color: $luxury-color;
+  }
+}
+
+.car-logo {
+  flex: 1;
+}
+
+.car-title {
+  font-family: "Big Shoulders Display", sans-serif;
+  color: white;
+  flex: 1;
+}
+
+.car-text,
+.learn-more button {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+  line-height: 2.5rem;
+}
+
+.car-text {
+  flex: 3;
+}
+
+
+.learn-more button {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3rem;
+  border: white solid 2px;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.learn-more button:hover {
+  background: none;
+  border: white solid 2px;
+  color: white;
+}
+
+.attribution {
+  @include flex(center, center, row);
+  p {
+    font-size: 2rem;
+  }
+  a {
+    font-size: 2rem;
+    text-indent: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 1044px) {
+  .card-background {
+    min-height: 90vh;
+  }
+
+  .card {
+    @include flex(center, center, column);
+    max-width: 300px;
+    margin: 5rem 0rem;
+  }
+
+  .sedans,
+  .suvs,
+  .luxury {
+    @include flex(center, flex-start, column);
+    min-height: 425px;
+  }
+  .car-logo {
+    padding-top: 3rem;
+  }
+  .car-logo, .car-title, .learn-more{
+    flex: 1;
+    padding-bottom: 2rem;
+  }
+  .car-text {
+    padding-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 1495px) {
+  .card {
+    max-width: 1045px;
+  }
+}

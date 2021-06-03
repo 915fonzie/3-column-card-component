@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h2 {
+  font-size: $car-title;
+}
+
+p,
+button,
+a {
+  font-size: $car-text;
+}
